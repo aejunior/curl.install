@@ -11,9 +11,9 @@ set SRC_DIR=%TMPDIR%\curl-%VERSION%
 set ZIPFILE=curl-%VERSION%.zip
 set ABS_ZIPFILE=%TMPDIR%\%ZIPFILE%
 set BUILD_DIR=%SRC_DIR%\build
-set LOGFILE=%TMPDIR%\zlib_install.log
+set LOGFILE=%TMPDIR%\curl_install.log
 
-echo [0/6] Library(zlib==%VERSION%)
+echo [0/6] Library(curl==%VERSION%)
 
 if not exist %TMPDIR% (mkdir %TMPDIR% && cd /d %TMPDIR% || exit /B 1)
 call :cleanup_src
