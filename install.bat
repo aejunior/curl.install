@@ -4,12 +4,11 @@ setlocal EnableDelayedExpansion
 set ORIGIN=%cd%
 :: Configuration
 set VERSION=7.87.0
-set VER=%VERSION:.=%
 set URL=https://curl.se/download/curl-%VERSION%.zip
 set CMAKE_VS_PLATFORM_NAME=x64
 set TMPDIR=%HOMEDRIVE%%HOMEPATH%\curl_tmp
 set SRC_DIR=%TMPDIR%\curl-%VERSION%
-set ZIPFILE=curl%VER%.zip
+set ZIPFILE=curl%VERSION%.zip
 set ABS_ZIPFILE=%TMPDIR%\%ZIPFILE%
 set BUILD_DIR=%SRC_DIR%\build
 set LOGFILE=%TMPDIR%\zlib_install.log
